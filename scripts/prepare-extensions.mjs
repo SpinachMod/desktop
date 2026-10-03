@@ -5,6 +5,8 @@ import { promisify } from 'node:util';
 import zlib from 'node:zlib';
 import TurboWarpBuilder from '@turbowarp/extensions/builder';
 import NitroBoltBuilder from '@nitro-bolt/extensions/builder';
+import BilupBuilder from '@bilup/extensions/builder';
+import PotentiaModBuilder from '@potentiamod/extensions/builder';
 
 const mode = 'desktop';
 
@@ -57,6 +59,18 @@ const builders = [
     Builder: NitroBoltBuilder,
     // Keep the two extension galleries separate so identical slugs can coexist.
     prefix: 'nitrobolt'
+  },
+  {
+    name: 'Bilup',
+    Builder: BilupBuilder,
+    // Keep the two extension galleries separate so identical slugs can coexist.
+    prefix: 'bilup'
+  },
+  {
+    name: 'PotentiaMod',
+    Builder: PotentiaModBuilder,
+    // Keep the two extension galleries separate so identical slugs can coexist.
+    prefix: 'potentiamod'
   }
 ];
 
