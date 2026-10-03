@@ -1,13 +1,13 @@
 {
-  "name": "nitrobolt-desktop",
-  "description": "A mod of TurboWarp with tons of new features, and a haven for developers who don't want to be restricted by \"compatibility\".",
+  "name": "spinachmod-desktop",
+  "description": "A mod of NitroBolt with tons of new features, and a haven for developers who don't want to be restricted by \"compatibility\".",
   "version": "1.0.0",
   "packageManager": "pnpm@10.33.0",
   "license": "GPL-3.0",
   "type": "commonjs",
   "author": {
-    "name": "Cubester",
-    "email": "contact@nitrobolt.org"
+    "name": "Crystal Franks",
+    "email": "crystalfranks18@hotmail.com"
   },
   "scripts": {
     "fetch": "node scripts/download-library-files.mjs && node scripts/download-packager.mjs && node scripts/prepare-extensions.mjs",
@@ -27,7 +27,9 @@
     "@babel/preset-env": "^7.12.16",
     "@babel/preset-react": "^7.13.13",
     "@electron/fuses": "^2.1.2",
-    "@nitro-bolt/extensions": "github:Nitro-Bolt/extensions#master",
+    "@bilup/extensions": "github:Bilup/extensions#main",
+    "@nitro-bolt/extensions": "github:SpinachMod/extensions#master",
+    "@potentiamod/extensions": "github:PotentiaMod/pot-extensions#master",
     "@turbowarp/extensions": "github:TurboWarp/extensions#master",
     "autoprefixer": "^9.8.8",
     "babel-loader": "^8.4.1",
@@ -44,7 +46,7 @@
     "postcss-import": "^14.0.0",
     "postcss-loader": "^4.2.0",
     "postcss-simple-vars": "^6.0.3",
-    "scratch-gui": "github:Nitro-Bolt/scratch-gui#develop",
+    "scratch-gui": "github:SpinachMod/scratch-gui#develop",
     "scratch-render-fonts": "github:TurboWarp/scratch-render-fonts#master",
     "style-loader": "^0.23.0",
     "url-loader": "^4.1.1",
@@ -66,17 +68,17 @@
   "homepage": "https://desktop.turbowarp.org/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Nitro-Bolt/desktop.git"
+    "url": "https://github.com/SpinachMod/desktop.git"
   },
   "bugs": {
-    "url": "https://github.com/Nitro-Bolt/desktop/issues",
+    "url": "https://github.com/SpinachMod/desktop/issues",
     "email": "contact@turbowarp.org"
   },
   "main": "./src-main/entrypoint.js",
-  "desktopName": "org.nitrobolt.desktop",
+  "desktopName": "org.spinachmod.desktop",
   "build": {
-    "appId": "org.nitrobolt.desktop",
-    "productName": "NitroBolt",
+    "appId": "org.spinachmod.desktop",
+    "productName": "SpinachMod",
     "files": [
       "node_modules/**/*",
       "src-main/**/*",
@@ -152,16 +154,16 @@
       "provisioningProfile": "build/development.provisionprofile"
     },
     "linux": {
-      "executableName": "nitrobolt-desktop",
+      "executableName": "spinachmod-desktop",
       "artifactName": "${productName}-Linux-${version}-${arch}.${ext}",
-      "maintainer": "Cubester <contact@nitrobolt.org>",
+      "maintainer": "Cubester <contact@spinachmod.org>",
       "icon": "./build/",
       "synopsis": "Mod of Scratch with a compiler and more features.",
-      "description": "NitroBolt is a mod of TurboWarp with tons of new features, and a haven for developers who don't want to be restricted by \"compatibility\".",
+      "description": "SpinachMod is a mod of TurboWarp with tons of new features, and a haven for developers who don't want to be restricted by \"compatibility\".",
       "category": "Development",
       "desktop": {
         "entry": {
-          "StartupWMClass": "nitrobolt-desktop",
+          "StartupWMClass": "spinachmod-desktop",
           "Keywords": "scratch; turbowarp;"
         }
       },
