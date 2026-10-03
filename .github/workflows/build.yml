@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: 24
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
       - name: Fetch
         run: pnpm run fetch
       - name: Compile
